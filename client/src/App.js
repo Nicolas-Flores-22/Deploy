@@ -4,6 +4,9 @@ import './App.css';
 // Importamos nuestros componentes desde componentes
 import { About, Detail, Form, Home, Landing, Nav, Footer } from './components'
 
+import axios from 'axios';
+
+axios.defaults.baseURL = 'http://localhost:3001/';
 
 function App() {
 
