@@ -9,7 +9,7 @@ const About = () => {
 
     setTimeout(() => {
         setLoad(false);
-    }, 1000)
+    }, 1500)
 
     return (
         <div className={style.containerAbout}>
