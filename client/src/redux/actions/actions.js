@@ -6,7 +6,6 @@ import axios from 'axios';
 export const getGames = () => {
     return async function (dispatch) {
         const allgames = await axios.get('/videogames/games')
-            // .then(response => alert(response.data))
             .catch(error => alert(error.response.data))
 
         const games = allgames.data;
@@ -20,7 +19,6 @@ export const getGames = () => {
 export const getGame = (id) => {
     return async function (dispatch) {
         const gameData = await axios.get(`/videogames/games/${id}`)
-            // .then(response => alert(response.data))
             .catch(error => alert(error.response.data))
         const game = gameData.data;
 
@@ -34,7 +32,6 @@ export const getGame = (id) => {
 export const getGameByName = (name) => {
     return async function (dispatch) {
         const gameData = await axios.get(`/videogames/games/name?name=${name}`)
-            // .then(response => alert(response.data))
             .catch(error => alert(error.response.data))
         const game = gameData.data;
 
@@ -48,7 +45,6 @@ export const getGameByName = (name) => {
 export const getGenres = () => {
     return async function (dispatch) {
         const genreData = await axios.get('/videogames/genres')
-            // .then(response => alert(response.data))
             .catch(error => alert(error.response.data))
 
         const genres = genreData.data;
